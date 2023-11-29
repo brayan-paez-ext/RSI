@@ -28,7 +28,6 @@
                     "enable_change_data_feed": "true"
                 },
                 "column_mapping": [
-                    ,
                 ],
                 "incremental_load": true,
                 "is_enabled": false,
