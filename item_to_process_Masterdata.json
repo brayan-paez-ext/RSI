@@ -1288,7 +1288,7 @@
                 "additional_parameters": {
                     "enable_change_data_feed": "true"
                 },
-                "column_mapping": [,
+                "column_mapping": [
                     {
                         "source_column_name": "source_commit_ts",
                         "target_data_type": "string"
@@ -1375,7 +1375,7 @@
                 "additional_parameters": {
                     "enable_change_data_feed": "true"
                 },
-                "column_mapping": [,
+                "column_mapping": [
                     {
                         "source_column_name": "source_commit_ts",
                         "target_data_type": "string"
@@ -1462,7 +1462,7 @@
                 "additional_parameters": {
                     "enable_change_data_feed": "true"
                 },
-                "column_mapping": [,
+                "column_mapping": [
                     {
                         "source_column_name": "source_commit_ts",
                         "target_data_type": "string"
