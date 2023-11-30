@@ -347,7 +347,7 @@
         {
             "load_to_bronze": {
                 "adb_brewdat_library_version": "v0.9.0",
-                "adb_notebook_path": "//brewdat-maz-maz-masterdata-rsi-repo-adb/data_integration/sap_pr0/load_brz_generic_parquet",
+                "adb_notebook_path": "//brewdat-maz-maz-masterdata-rsi-repo-adb/data_integration/sap_dop/load_brz_generic_parquet",
                 "additional_parameters": " { \"enable_change_data_feed\": true, \"partition_column\": \"__ref_date\", \"partition_date_format\" : \"yyyyMM\" } ",
                 "incremental_load": true,
                 "is_enabled": true,
