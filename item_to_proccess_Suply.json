@@ -4,60 +4,6 @@
         {
             "load_to_bronze": {
                 "adb_brewdat_library_version": "v0.9.0",
-                "adb_notebook_path": "//brewdat-maz-maz-masterdata-supply-repo-adb/data_integration/sap_pr0/load_brz_generic_parquet",
-                "additional_parameters": " { \"enable_change_data_feed\": true, \"partition_column\": \"__ref_date\", \"partition_date_format\" : \"yyyyMM\" } ",
-                "incremental_load": true,
-                "is_enabled": true,
-                "reset_stream_checkpoint": false,
-                "source_raw_zone": "mx",
-                "source_system": "sap_pr0",
-                "source_system_raw": "sap_pr0",
-                "source_system_zone": "maz",
-                "source_table": "mx_CRHD",
-                "target_business_domain": "masterdata",
-                "target_business_subdomain": "supply",
-                "target_database": "brz_maz_masterdata_sap_pr0",
-                "target_table": "mx_crhd",
-                "target_zone": "maz",
-                "source_system_country": "mx"
-            },
-            "load_to_silver": {
-                "adb_brewdat_library_version": "v0.9.0",
-                "adb_notebook_path": "//brewdat-maz-maz-masterdata-supply-repo-adb/data_integration/sap_pr0/load_slv_generic_parquet",
-                "additional_parameters": {
-                    "enable_change_data_feed": "true"
-                },
-                "column_mapping": [],
-                "incremental_load": true,
-                "is_enabled": true,
-                "key_columns": [
-                    "mandt",
-                    "objty",
-                    "objid"
-                ],
-                "load_type": "UPSERT",
-                "partition_columns": [],
-                "reset_stream_checkpoint": false,
-                "source_database": "brz_maz_masterdata_sap_pr0",
-                "source_system": "sap_pr0",
-                "source_system_raw": "sap_pr0",
-                "source_system_zone": "maz",
-                "source_table": "mx_crhd",
-                "target_business_domain": "masterdata",
-                "target_business_subdomain": "supply",
-                "target_database": "slv_maz_masterdata_sap_pr0",
-                "target_table": "mx_crhd",
-                "target_zone": "maz",
-                "source_system_country": "mx",
-                "watermark_column": [
-                    "source_commit_ts",
-                    "header__change_seq"
-                ]
-            }
-        },
-        {
-            "load_to_bronze": {
-                "adb_brewdat_library_version": "v0.9.0",
                 "adb_notebook_path": "//brewdat-maz-maz-supply-production-repo-adb/data_integration/sap_dop/load_brz_generic_parquet",
                 "additional_parameters": " { \"enable_change_data_feed\": true, \"partition_column\": \"__ref_date\", \"partition_date_format\" : \"yyyyMM\" } ",
                 "incremental_load": true,
@@ -67,7 +13,7 @@
                 "source_system": "sap_dop",
                 "source_system_raw": "sap_dop",
                 "source_system_zone": "maz",
-                "source_table": "do_mch1",
+                "source_table": "do_MCH1",
                 "target_business_domain": "supply",
                 "target_business_subdomain": "production",
                 "target_database": "brz_maz_supply_sap_dop",
