@@ -921,7 +921,6 @@
                     "enable_change_data_feed": "true"
                 },
                 "column_mapping": [
-                    
                     {
                         "source_column_name": "mandt",
                         "target_data_type": "smallint"
@@ -964,7 +963,8 @@
                     },
                     {
                         "source_column_name": "peinh",
-                        "target_data_type": "date"
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
                     },
                     {
                         "source_column_name": "bklas",
@@ -996,7 +996,8 @@
                     },
                     {
                         "source_column_name": "vmpei",
-                        "target_data_type": "date"
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
                     },
                     {
                         "source_column_name": "vmbkl",
@@ -1028,7 +1029,8 @@
                     },
                     {
                         "source_column_name": "vjpei",
-                        "target_data_type": "date"
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
                     },
                     {
                         "source_column_name": "vjbkl",
@@ -1056,7 +1058,8 @@
                     },
                     {
                         "source_column_name": "laepr",
-                        "target_data_type": "date"
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
                     },
                     {
                         "source_column_name": "zkprs",
@@ -1064,11 +1067,13 @@
                     },
                     {
                         "source_column_name": "zkdat",
-                        "target_data_type": "date"
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
                     },
                     {
                         "source_column_name": "timestamp",
-                        "target_data_type": "date"
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
                     },
                     {
                         "source_column_name": "bwprs",
@@ -1120,15 +1125,18 @@
                     },
                     {
                         "source_column_name": "zpld1",
-                        "target_data_type": "date"
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
                     },
                     {
                         "source_column_name": "zpld2",
-                        "target_data_type": "date"
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
                     },
                     {
                         "source_column_name": "zpld3",
-                        "target_data_type": "date"
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
                     },
                     {
                         "source_column_name": "pperz",
@@ -1284,7 +1292,8 @@
                     },
                     {
                         "source_column_name": "wlinl",
-                        "target_data_type": "date"
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
                     },
                     {
                         "source_column_name": "abciw",
@@ -1292,7 +1301,8 @@
                     },
                     {
                         "source_column_name": "bwspa",
-                        "target_data_type": "date"
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
                     },
                     {
                         "source_column_name": "lplpx",
@@ -1344,7 +1354,8 @@
                     },
                     {
                         "source_column_name": "bwpei",
-                        "target_data_type": "date"
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
                     },
                     {
                         "source_column_name": "mbrue",
@@ -1355,65 +1366,10 @@
                         "target_data_type": "string"
                     },
                     {
-                        "source_column_name": "oicurval",
-                        "target_data_type": "Decimal(,)"
-                    },
-                    {
-                        "source_column_name": "oicurdate",
-                        "target_data_type": "date"
-                    },
-                    {
-                        "source_column_name": "oicurqty",
-                        "target_data_type": "Decimal(,)"
-                    },
-                    {
-                        "source_column_name": "oicurut",
-                        "target_data_type": "string"
-                    },
-                    {
-                        "source_column_name": "oifutval",
-                        "target_data_type": "Decimal(,)"
-                    },
-                    {
-                        "source_column_name": "oifutdate",
-                        "target_data_type": "date"
-                    },
-                    {
-                        "source_column_name": "oifutqty",
-                        "target_data_type": "Decimal(,)"
-                    },
-                    {
-                        "source_column_name": "oifutut",
-                        "target_data_type": "string"
-                    },
-                    {
-                        "source_column_name": "oinvalqty",
-                        "target_data_type": "Decimal(,)"
-                    },
-                    {
-                        "source_column_name": "oirequat",
-                        "target_data_type": "Decimal(,)"
-                    },
-                    {
-                        "source_column_name": "oitaxkey",
-                        "target_data_type": "string"
-                    },
-                    {
-                        "source_column_name": "oihantyp",
-                        "target_data_type": "string"
-                    },
-                    {
-                        "source_column_name": "oihmtxgr",
-                        "target_data_type": "string"
-                    },
-                    {
-                        "source_column_name": "dummy_val_incl_eew_ps",
-                        "target_data_type": "string"
-                    },
-                    {
                         "source_column_name": "oippinv",
                         "target_data_type": "string"
                     },
+                    
                     {
                         "source_column_name": "source_commit_ts",
                         "target_data_type": "string"
@@ -1453,7 +1409,7 @@
                     "mandt",
                     "matnr",
                     "bwkey",
-                    "bwtar_d"
+                    "bwtar"
                 ],
                 "load_type": "UPSERT",
                 "partition_columns": [],
@@ -1502,7 +1458,6 @@
                     "enable_change_data_feed": "true"
                 },
                 "column_mapping": [
-                    
                     {
                         "source_column_name": "mandt",
                         "target_data_type": "smallint"
@@ -1517,11 +1472,13 @@
                     },
                     {
                         "source_column_name": "umrez",
-                        "target_data_type": "date"
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
                     },
                     {
                         "source_column_name": "umren",
-                        "target_data_type": "date"
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
                     },
                     {
                         "source_column_name": "eannr",
@@ -1605,38 +1562,20 @@
                     },
                     {
                         "source_column_name": "nest_ftr",
-                        "target_data_type": "date"
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
                     },
                     {
                         "source_column_name": "max_stack",
                         "target_data_type": "tinyint"
                     },
                     {
-                        "source_column_name": "top_load_full",
-                        "target_data_type": "Decimal(,)"
-                    },
-                    {
-                        "source_column_name": "top_load_full_uom",
-                        "target_data_type": "string"
-                    },
-                    {
                         "source_column_name": "capause",
-                        "target_data_type": "date"
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
                     },
                     {
                         "source_column_name": "ty2tq",
-                        "target_data_type": "string"
-                    },
-                    {
-                        "source_column_name": "dummy_uom_incl_eew_ps",
-                        "target_data_type": "string"
-                    },
-                    {
-                        "source_column_name": "/cwm/ty2tq",
-                        "target_data_type": "string"
-                    },
-                    {
-                        "source_column_name": "pcbut",
                         "target_data_type": "string"
                     },
                     {
@@ -1676,8 +1615,8 @@
                 "is_enabled": false,
                 "key_columns": [
                     "mandt",
-                    "spras",
-                    "mtart"
+                    "matnr",
+                    "meinh"
                 ],
                 "load_type": "UPSERT",
                 "partition_columns": [],
@@ -1727,6 +1666,86 @@
                 },
                 "column_mapping": [
                     {
+                        "source_column_name": "mandt",
+                        "target_data_type": "smallint"
+                    },
+                    {
+                        "source_column_name": "werks",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "lgort",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "lgobe",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "spart",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "xlong",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "xbufx",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "diskz",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "xblgo",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "xress",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "xhupf",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "parlg",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "vkorg",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "vtweg",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "vstel",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "lifnr",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "kunnr",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "oih_licno",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "oig_itrfl",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "oib_tnkassign",
+                        "target_data_type": "string"
+                    },
+                    {
                         "source_column_name": "source_commit_ts",
                         "target_data_type": "string"
                     },
@@ -1763,8 +1782,8 @@
                 "is_enabled": false,
                 "key_columns": [
                     "mandt",
-                    "spras",
-                    "mtart"
+                    "werks",
+                    "lgort"
                 ],
                 "load_type": "UPSERT",
                 "partition_columns": [],
@@ -1901,6 +1920,178 @@
                 },
                 "column_mapping": [
                     {
+                        "source_column_name": "mandt",
+                        "target_data_type": "smallint"
+                    },
+                    {
+                        "source_column_name": "matnr",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "werks",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "verid",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "bdatu",
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    },
+                    {
+                        "source_column_name": "adatu",
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    },
+                    {
+                        "source_column_name": "stlal",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "stlan",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "plnty",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "plnnr",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "alnal",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "beskz",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "sobsl",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "losgr",
+                        "target_data_type": "Decimal(,)"
+                    },
+                    {
+                        "source_column_name": "mdv01",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "mdv02",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "text1",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "ewahr",
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    },
+                    {
+                        "source_column_name": "verto",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "serkz",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "bstmi",
+                        "target_data_type": "Decimal(,)"
+                    },
+                    {
+                        "source_column_name": "bstma",
+                        "target_data_type": "Decimal(,)"
+                    },
+                    {
+                        "source_column_name": "rgekz",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "alort",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "pltyg",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "plnng",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "alnag",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "pltym",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "plnnm",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "alnam",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "csplt",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "matko",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "elpro",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "prvbe",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "prfg_f",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "prdat",
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    },
+                    {
+                        "source_column_name": "mksp",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "prfg_r",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "prfg_g",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "prfg_s",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "ucmat",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "ppeguid",
+                        "target_data_type": "string"
+                    },
+                    {
                         "source_column_name": "source_commit_ts",
                         "target_data_type": "string"
                     },
@@ -1937,8 +2128,9 @@
                 "is_enabled": false,
                 "key_columns": [
                     "mandt",
-                    "spras",
-                    "mtart"
+                    "matnr",
+                    "werks",
+                    "verid"
                 ],
                 "load_type": "UPSERT",
                 "partition_columns": [],
@@ -1960,6 +2152,5 @@
                 ]
             }
         }
-
     ]
 }
