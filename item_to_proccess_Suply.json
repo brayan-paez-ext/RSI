@@ -263,6 +263,229 @@
                 },
                 "column_mapping": [
                     {
+                        "source_column_name": "mandt",
+                        "target_data_type": "smallint"
+                    },
+                    {
+                        "source_column_name": "matnr",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "werks",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "lgort",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "charg",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "lvorm",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "ersda",
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    },
+                    {
+                        "source_column_name": "ernam",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "laeda",
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    },
+                    {
+                        "source_column_name": "aenam",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "lfgja",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "lfmon",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "sperc",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "clabs",
+                        "target_data_type": "Decimal(,)"
+                    },
+                    {
+                        "source_column_name": "cumlm",
+                        "target_data_type": "Decimal(,)"
+                    },
+                    {
+                        "source_column_name": "cinsm",
+                        "target_data_type": "Decimal(,)"
+                    },
+                    {
+                        "source_column_name": "ceinm",
+                        "target_data_type": "Decimal(,)"
+                    },
+                    {
+                        "source_column_name": "cspem",
+                        "target_data_type": "Decimal(,)"
+                    },
+                    {
+                        "source_column_name": "cretm",
+                        "target_data_type": "Decimal(,)"
+                    },
+                    {
+                        "source_column_name": "cvmla",
+                        "target_data_type": "Decimal(,)"
+                    },
+                    {
+                        "source_column_name": "cvmum",
+                        "target_data_type": "Decimal(,)"
+                    },
+                    {
+                        "source_column_name": "cvmin",
+                        "target_data_type": "Decimal(,)"
+                    },
+                    {
+                        "source_column_name": "cvmei",
+                        "target_data_type": "Decimal(,)"
+                    },
+                    {
+                        "source_column_name": "cvmsp",
+                        "target_data_type": "Decimal(,)"
+                    },
+                    {
+                        "source_column_name": "cvmre",
+                        "target_data_type": "Decimal(,)"
+                    },
+                    {
+                        "source_column_name": "kzicl",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "kzicq",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "kzice",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "kzics",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "kzvcl",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "kzvcq",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "kzvce",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "kzvcs",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "herkl",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "chdll",
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    },
+                    {
+                        "source_column_name": "chjin",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "chrue",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "sgt_scat",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "fsh_season_year",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "fsh_season",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "fsh_collection",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "fsh_theme",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "fsh_salloc_qty",
+                        "target_data_type": "Decimal(,)"
+                    },
+                    {
+                        "source_column_name": "/cwm/clabs",
+                        "target_data_type": "Decimal(,)"
+                    },
+                    {
+                        "source_column_name": "/cwm/cinsm",
+                        "target_data_type": "Decimal(,)"
+                    },
+                    {
+                        "source_column_name": "/cwm/ceinm",
+                        "target_data_type": "Decimal(,)"
+                    },
+                    {
+                        "source_column_name": "/cwm/cspem",
+                        "target_data_type": "Decimal(,)"
+                    },
+                    {
+                        "source_column_name": "/cwm/cretm",
+                        "target_data_type": "Decimal(,)"
+                    },
+                    {
+                        "source_column_name": "/cwm/cumlm",
+                        "target_data_type": "Decimal(,)"
+                    },
+                    {
+                        "source_column_name": "/cwm/cvmla",
+                        "target_data_type": "Decimal(,)"
+                    },
+                    {
+                        "source_column_name": "/cwm/cvmin",
+                        "target_data_type": "Decimal(,)"
+                    },
+                    {
+                        "source_column_name": "/cwm/cvmei",
+                        "target_data_type": "Decimal(,)"
+                    },
+                    {
+                        "source_column_name": "/cwm/cvmsp",
+                        "target_data_type": "Decimal(,)"
+                    },
+                    {
+                        "source_column_name": "/cwm/cvmre",
+                        "target_data_type": "Decimal(,)"
+                    },
+                    {
+                        "source_column_name": "/cwm/cvmum",
+                        "target_data_type": "Decimal(,)"
+                    },                    
+                    {
                         "source_column_name": "source_commit_ts",
                         "target_data_type": "string"
                     },
@@ -299,8 +522,11 @@
                 "is_enabled": false,
                 "key_columns": [
                     "mandt",
-                    "spras",
-                    "mtart"
+                    "matnr",
+                    "werks",
+                    "lgort",
+                    "charg"
+                    
                 ],
                 "load_type": "UPSERT",
                 "partition_columns": [],
