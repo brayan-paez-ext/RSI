@@ -1,5 +1,5 @@
 {
-    "batch_name_suffix": "slv_maz_masterdata_sap_pr0_mx_d",
+    "batch_name_suffix": "slv_maz_supply_sap_dop_do_d",
     "pipelines": [
         {
             "load_to_bronze": {
