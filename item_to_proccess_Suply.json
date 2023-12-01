@@ -412,79 +412,7 @@
                     {
                         "source_column_name": "chrue",
                         "target_data_type": "string"
-                    },
-                    {
-                        "source_column_name": "sgt_scat",
-                        "target_data_type": "string"
-                    },
-                    {
-                        "source_column_name": "fsh_season_year",
-                        "target_data_type": "string"
-                    },
-                    {
-                        "source_column_name": "fsh_season",
-                        "target_data_type": "string"
-                    },
-                    {
-                        "source_column_name": "fsh_collection",
-                        "target_data_type": "string"
-                    },
-                    {
-                        "source_column_name": "fsh_theme",
-                        "target_data_type": "string"
-                    },
-                    {
-                        "source_column_name": "fsh_salloc_qty",
-                        "target_data_type": "Decimal(,)"
-                    },
-                    {
-                        "source_column_name": "/cwm/clabs",
-                        "target_data_type": "Decimal(,)"
-                    },
-                    {
-                        "source_column_name": "/cwm/cinsm",
-                        "target_data_type": "Decimal(,)"
-                    },
-                    {
-                        "source_column_name": "/cwm/ceinm",
-                        "target_data_type": "Decimal(,)"
-                    },
-                    {
-                        "source_column_name": "/cwm/cspem",
-                        "target_data_type": "Decimal(,)"
-                    },
-                    {
-                        "source_column_name": "/cwm/cretm",
-                        "target_data_type": "Decimal(,)"
-                    },
-                    {
-                        "source_column_name": "/cwm/cumlm",
-                        "target_data_type": "Decimal(,)"
-                    },
-                    {
-                        "source_column_name": "/cwm/cvmla",
-                        "target_data_type": "Decimal(,)"
-                    },
-                    {
-                        "source_column_name": "/cwm/cvmin",
-                        "target_data_type": "Decimal(,)"
-                    },
-                    {
-                        "source_column_name": "/cwm/cvmei",
-                        "target_data_type": "Decimal(,)"
-                    },
-                    {
-                        "source_column_name": "/cwm/cvmsp",
-                        "target_data_type": "Decimal(,)"
-                    },
-                    {
-                        "source_column_name": "/cwm/cvmre",
-                        "target_data_type": "Decimal(,)"
-                    },
-                    {
-                        "source_column_name": "/cwm/cvmum",
-                        "target_data_type": "Decimal(,)"
-                    },                    
+                    },                                        
                     {
                         "source_column_name": "source_commit_ts",
                         "target_data_type": "string"
@@ -503,11 +431,11 @@
                     },
                     {
                         "source_column_name": "header__change_seq",
-                        "target_data_type": "STRING"
+                        "target_data_type": "string"
                     },
                     {
                         "source_column_name": "op_ind",
-                        "target_data_type": "STRING"
+                        "target_data_type": "string"
                     },
                     {
                         "source_column_name": "__insert_gmt_ts",
@@ -531,7 +459,7 @@
                 "load_type": "UPSERT",
                 "partition_columns": [],
                 "reset_stream_checkpoint": false,
-                "source_database": "brz_maz_masterdata_sap_dop",
+                "source_database": "brz_maz_supply_sap_dop",
                 "source_system": "sap_dop",
                 "source_system_raw": "sap_dop",
                 "source_system_zone": "maz",
