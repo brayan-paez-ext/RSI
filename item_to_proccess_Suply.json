@@ -28,6 +28,184 @@
                     "enable_change_data_feed": "true"
                 },
                 "column_mapping": [
+                    {
+                        "source_column_name": "mandt", 
+                        "target_data_type": "smallint"
+                    }, 
+                    {
+                        "source_column_name": "matnr", 
+                        "target_data_type": "string"
+                    }, 
+                    {
+                        "source_column_name": "charg", 
+                        "target_data_type": "string"
+                    }, 
+                    {
+                        "source_column_name": "lvorm",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "ersda",
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    }, 
+                    {
+                        "source_column_name": "ernam",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "aenam",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "laeda",
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    },
+                    {
+                        "source_column_name": "verab", 
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    }, 
+                    {
+                        "source_column_name": "vfdat", 
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    }, 
+                    {
+                        "source_column_name": "zusch", 
+                        "target_data_type": "string"
+                    }, 
+                    {
+                        "source_column_name": "zustd", 
+                        "target_data_type": "string"
+                    }, 
+                    {
+                        "source_column_name": "zaedt", 
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    }, 
+                    {
+                        "source_column_name": "lifnr", 
+                        "target_data_type": "string"
+                    }, 
+                    {
+                        "source_column_name": "licha", 
+                        "target_data_type": "string"
+                    }, 
+                    {
+                        "source_column_name": "vlcha", 
+                        "target_data_type": "string"
+                    }, 
+                    {
+                        "source_column_name": "vlwrk", 
+                        "target_data_type": "string"
+                    }, 
+                    {
+                        "source_column_name": "vlmat", 
+                        "target_data_type": "string"
+                    }, 
+                    {
+                        "source_column_name": "chame", 
+                        "target_data_type": "string"
+                    }, 
+                    {
+                        "source_column_name": "lwedt", 
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    }, 
+                    {
+                        "source_column_name": "fvdt1", 
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    }, 
+                    {
+                        "source_column_name": "fvdt2", 
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    }, 
+                    {
+                        "source_column_name": "fvdt3", 
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    }, 
+                    {
+                        "source_column_name": "fvdt4", 
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    }, 
+                    {
+                        "source_column_name": "fvdt5", 
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    }, 
+                    {
+                        "source_column_name": "fvdt6", 
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    }, 
+                    {
+                        "source_column_name": "herkl", 
+                        "target_data_type": "string"
+                    }, 
+                    {
+                        "source_column_name": "herkr", 
+                        "target_data_type": "string"
+                    }, 
+                    {
+                        "source_column_name": "mtver", 
+                        "target_data_type": "string"
+                    }, 
+                    {
+                        "source_column_name": "qndat", 
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    }, 
+                    {
+                        "source_column_name": "hsdat", 
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    }, 
+                    {
+                        "source_column_name": "cuobj_bm", 
+                        "target_data_type": "bigint"
+                    }, 
+                    {
+                        "source_column_name": "deact_bm", 
+                        "target_data_type": "string"
+                    }, 
+                    {
+                        "source_column_name": "source_commit_ts",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "target_apply_ts",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "source_commit_dt",
+                        "date_format": "string"
+                    },
+                    {
+                        "source_column_name": "target_apply_dt",
+                        "date_format": "string"
+                    },
+                    {
+                        "source_column_name": "header__change_seq",
+                        "target_data_type": "STRING"
+                    },
+                    {
+                        "source_column_name": "op_ind",
+                        "target_data_type": "STRING"
+                    },
+                    {
+                        "source_column_name": "__insert_gmt_ts",
+                        "target_data_type": "timestamp"
+                    },
+                    {
+                        "source_column_name": "__update_gmt_ts",
+                        "target_data_type": "timestamp"
+                    }                    
                     
                 ],
                 "incremental_load": true,

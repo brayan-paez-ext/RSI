@@ -28,6 +28,240 @@
                     "enable_change_data_feed": "true"
                 },
                 "column_mapping": [
+                    {
+                        "source_column_name": "mandt", 
+                        "target_data_type": "smallint" 
+                    },
+                    {
+                        "source_column_name": "matnr", 
+                        "target_data_type": "string" 
+                    }, 
+                    {
+                        "source_column_name": "werks", 
+                        "target_data_type": "string" 
+                    }, 
+                    {
+                        "source_column_name": "lgort", 
+                        "target_data_type": "string" 
+                    }, 
+                    {
+                        "source_column_name": "pstat", 
+                        "target_data_type": "string" 
+                    }, 
+                    {
+                        "source_column_name": "lvorm", 
+                        "target_data_type": "string" 
+                    }, 
+                    {
+                        "source_column_name": "lfgja", 
+                        "target_data_type": "smallint" 
+                    }, 
+                    {
+                        "source_column_name": "lfmon", 
+                        "target_data_type": "tinyint" 
+                    }, 
+                    {
+                        "source_column_name": "sperr", 
+                        "target_data_type": "string" 
+                    }, 
+                    {
+                        "source_column_name": "labst", 
+                        "target_data_type": "Decimal(13,0)" 
+                    }, 
+                    {
+                        "source_column_name": "umlme", 
+                        "target_data_type": "Decimal(13,0)" 
+                    }, 
+                    {
+                        "source_column_name": "insme", 
+                        "target_data_type": "Decimal(13,0)" 
+                    }, 
+                    {
+                        "source_column_name": "einme", 
+                        "target_data_type": "Decimal(13,0)" 
+                    }, 
+                    {
+                        "source_column_name": "speme", 
+                        "target_data_type": "Decimal(13,0)" 
+                    }, 
+                    {
+                        "source_column_name": "retme", 
+                        "target_data_type": "Decimal(13,0)" 
+                    }, 
+                    {
+                        "source_column_name": "vmlab", 
+                        "target_data_type": "Decimal(13,0)" 
+                    }, 
+                    {
+                        "source_column_name": "vmuml", 
+                        "target_data_type": "Decimal(13,0)" 
+                    }, 
+                    {
+                        "source_column_name": "vmins", 
+                        "target_data_type": "Decimal(13,0)" 
+                    }, 
+                    {
+                        "source_column_name": "vmein", 
+                        "target_data_type": "Decimal(13,0)" 
+                    }, 
+                    {
+                        "source_column_name": "vmspe", 
+                        "target_data_type": "Decimal(13,0)" 
+                    }, 
+                    {
+                        "source_column_name": "vmret", 
+                        "target_data_type": "Decimal(13,0)" 
+                    }, 
+                    {
+                        "source_column_name": "kzill", 
+                        "target_data_type": "string" 
+                    }, 
+                    {
+                        "source_column_name": "kzilq", 
+                        "target_data_type": "string" 
+                    }, 
+                    {
+                        "source_column_name": "kzile", 
+                        "target_data_type": "string" 
+                    }, 
+                    {
+                        "source_column_name": "kzils", 
+                        "target_data_type": "string" 
+                    }, 
+                    {
+                        "source_column_name": "kzvll", 
+                        "target_data_type": "string" 
+                    }, 
+                    {
+                        "source_column_name": "kzvlq", 
+                        "target_data_type": "string" 
+                    }, 
+                    {
+                        "source_column_name": "kzvle", 
+                        "target_data_type": "string" 
+                    }, 
+                    {
+                        "source_column_name": "kzvls", 
+                        "target_data_type": "string" 
+                    }, 
+                    {
+                        "source_column_name": "diskz", 
+                        "target_data_type": "string" 
+                    }, 
+                    {
+                        "source_column_name": "lsobs", 
+                        "target_data_type": "string" 
+                    }, 
+                    {
+                        "source_column_name": "lminb", 
+                        "target_data_type": "Decimal(13,0)" 
+                    }, 
+                    {
+                        "source_column_name": "lbstf", 
+                        "target_data_type": "Decimal(13,0)" 
+                    }, 
+                    {
+                        "source_column_name": "herkl", 
+                        "target_data_type": "string" 
+                    }, 
+                    {
+                        "source_column_name": "exppg", 
+                        "target_data_type": "string" 
+                    }, 
+                    {
+                        "source_column_name": "exver", 
+                        "target_data_type": "string" 
+                    }, 
+                    {
+                        "source_column_name": "lgpbe", 
+                        "target_data_type": "string" 
+                    }, 
+                    {
+                        "source_column_name": "klabs", 
+                        "target_data_type": "Decimal(13,0)" 
+                    }, 
+                    {
+                        "source_column_name": "kinsm", 
+                        "target_data_type": "Decimal(13,0)" 
+                    }, 
+                    {
+                        "source_column_name": "keinm", 
+                        "target_data_type": "Decimal(13,0)" 
+                    }, 
+                    {
+                        "source_column_name": "kspem", 
+                        "target_data_type": "Decimal(13,0)" 
+                    }, 
+                    {
+                        "source_column_name": "dlinl", 
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    }, 
+                    {
+                        "source_column_name": "prctl", 
+                        "target_data_type": "string" 
+                    }, 
+                    {
+                        "source_column_name": "ersda", 
+                        "target_data_type": "date", 
+                        "date_format": "yyyy-mm-dd"
+                    }, 
+                    {
+                        "source_column_name": "vklab", 
+                        "target_data_type": "Decimal(13,0)" 
+                    }, 
+                    {
+                        "source_column_name": "vkuml", 
+                        "target_data_type": "Decimal(13,0)" 
+                    }, 
+                    {
+                        "source_column_name": "lwmkb", 
+                        "target_data_type": "string" 
+                    }, 
+                    {
+                        "source_column_name": "bskrf", 
+                        "target_data_type": "float" 
+                    }, 
+                    {
+                        "source_column_name": "mdrue", 
+                        "target_data_type": "string" 
+                    }, 
+                    {
+                        "source_column_name": "mdjin", 
+                        "target_data_type": "smallint" 
+                    },
+                    {
+                        "source_column_name": "source_commit_ts",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "target_apply_ts",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "source_commit_dt",
+                        "date_format": "string"
+                    },
+                    {
+                        "source_column_name": "target_apply_dt",
+                        "date_format": "string"
+                    },
+                    {
+                        "source_column_name": "header__change_seq",
+                        "target_data_type": "STRING"
+                    },
+                    {
+                        "source_column_name": "op_ind",
+                        "target_data_type": "STRING"
+                    },
+                    {
+                        "source_column_name": "__insert_gmt_ts",
+                        "target_data_type": "timestamp"
+                    },
+                    {
+                        "source_column_name": "__update_gmt_ts",
+                        "target_data_type": "timestamp"
+                    }
                 ],
                 "incremental_load": true,
                 "is_enabled": false,
@@ -259,7 +493,66 @@
                     "enable_change_data_feed": "true"
                 },
                 "column_mapping": [
-                    
+                    {
+                        "source_column_name": "mandt", 
+                        "target_data_type": "smallint"
+                      }, 
+                      {
+                        "source_column_name": "spras", 
+                        "target_data_type": "string"
+                      }, 
+                      {
+                        "source_column_name": "msehi", 
+                        "target_data_type": "string"
+                      }, 
+                      {
+                        "source_column_name": "mseh3", 
+                        "target_data_type": "string"
+                      }, 
+                      {
+                        "source_column_name": "mseh6", 
+                        "target_data_type": "string"
+                      }, 
+                      {
+                        "source_column_name": "mseht", 
+                        "target_data_type": "string"
+                      }, 
+                      {
+                        "source_column_name": "msehl", 
+                        "target_data_type": "string"
+                      },
+                      {
+                          "source_column_name": "source_commit_ts",
+                          "target_data_type": "string"
+                      },
+                      {
+                          "source_column_name": "target_apply_ts",
+                          "target_data_type": "string"
+                      },
+                      {
+                          "source_column_name": "source_commit_dt",
+                          "date_format": "string"
+                      },
+                      {
+                          "source_column_name": "target_apply_dt",
+                          "date_format": "string"
+                      },
+                      {
+                          "source_column_name": "header__change_seq",
+                          "target_data_type": "STRING"
+                      },
+                      {
+                          "source_column_name": "op_ind",
+                          "target_data_type": "STRING"
+                      },
+                      {
+                          "source_column_name": "__insert_gmt_ts",
+                          "target_data_type": "timestamp"
+                      },
+                      {
+                          "source_column_name": "__update_gmt_ts",
+                          "target_data_type": "timestamp"
+                      }
                 ],
                 "incremental_load": true,
                 "is_enabled": false,
@@ -315,7 +608,58 @@
                     "enable_change_data_feed": "true"
                 },
                 "column_mapping": [
-                    
+                    {
+                        "source_column_name": "mandt", 
+                        "target_data_type": "smallint"
+                      }, 
+                      {
+                        "source_column_name": "spras", 
+                        "target_data_type": "string"
+                      },
+                      {
+                        "source_column_name": "matkl", 
+                        "target_data_type": "string"
+                      }, 
+                      {
+                        "source_column_name": "wgbez", 
+                        "target_data_type": "string"
+                      }, 
+                      {
+                        "source_column_name": "wgbez60",
+                        "target_data_type": "string"
+                      },
+                      {
+                          "source_column_name": "source_commit_ts",
+                          "target_data_type": "string"
+                      },
+                      {
+                          "source_column_name": "target_apply_ts",
+                          "target_data_type": "string"
+                      },
+                      {
+                          "source_column_name": "source_commit_dt",
+                          "date_format": "string"
+                      },
+                      {
+                          "source_column_name": "target_apply_dt",
+                          "date_format": "string"
+                      },
+                      {
+                          "source_column_name": "header__change_seq",
+                          "target_data_type": "STRING"
+                      },
+                      {
+                          "source_column_name": "op_ind",
+                          "target_data_type": "STRING"
+                      },
+                      {
+                          "source_column_name": "__insert_gmt_ts",
+                          "target_data_type": "timestamp"
+                      },
+                      {
+                          "source_column_name": "__update_gmt_ts",
+                          "target_data_type": "timestamp"
+                      }
                 ],
                 "incremental_load": true,
                 "is_enabled": false,
@@ -371,7 +715,54 @@
                     "enable_change_data_feed": "true"
                 },
                 "column_mapping": [
-                    
+                    {
+                        "source_column_name": "mandt", 
+                        "target_data_type": "smallint"
+                      }, 
+                      {
+                        "source_column_name": "spras", 
+                        "target_data_type": "string"
+                      }, 
+                      {
+                        "source_column_name": "mtart",
+                        "target_data_type": "string"
+                      }, 
+                      {
+                        "source_column_name": "mtbez", 
+                        "target_data_type": "string"
+                      },
+                      {
+                          "source_column_name": "source_commit_ts",
+                          "target_data_type": "string"
+                      },
+                      {
+                          "source_column_name": "target_apply_ts",
+                          "target_data_type": "string"
+                      },
+                      {
+                          "source_column_name": "source_commit_dt",
+                          "date_format": "string"
+                      },
+                      {
+                          "source_column_name": "target_apply_dt",
+                          "date_format": "string"
+                      },
+                      {
+                          "source_column_name": "header__change_seq",
+                          "target_data_type": "STRING"
+                      },
+                      {
+                          "source_column_name": "op_ind",
+                          "target_data_type": "STRING"
+                      },
+                      {
+                          "source_column_name": "__insert_gmt_ts",
+                          "target_data_type": "timestamp"
+                      },
+                      {
+                          "source_column_name": "__update_gmt_ts",
+                          "target_data_type": "timestamp"
+                      }  
                 ],
                 "incremental_load": true,
                 "is_enabled": false,
@@ -427,7 +818,54 @@
                     "enable_change_data_feed": "true"
                 },
                 "column_mapping": [
-                    
+                    {
+                        "source_column_name": "mandt", 
+                        "target_data_type": "smallint"
+                    }, 
+                    {
+                        "source_column_name": "spras", 
+                        "target_data_type": "string"
+                    }, 
+                    {
+                        "source_column_name": "prodh", 
+                        "target_data_type": "string"
+                    }, 
+                    {
+                        "source_column_name": "vtext", 
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "source_commit_ts",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "target_apply_ts",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "source_commit_dt",
+                        "date_format": "string"
+                    },
+                    {
+                        "source_column_name": "target_apply_dt",
+                        "date_format": "string"
+                    },
+                    {
+                        "source_column_name": "header__change_seq",
+                        "target_data_type": "STRING"
+                    },
+                    {
+                        "source_column_name": "op_ind",
+                        "target_data_type": "STRING"
+                    },
+                    {
+                        "source_column_name": "__insert_gmt_ts",
+                        "target_data_type": "timestamp"
+                    },
+                    {
+                        "source_column_name": "__update_gmt_ts",
+                        "target_data_type": "timestamp"
+                    }
                 ],
                 "incremental_load": true,
                 "is_enabled": false,
