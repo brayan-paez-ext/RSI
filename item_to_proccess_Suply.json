@@ -650,6 +650,93 @@
                     "header__change_seq"
                 ]
             }
+        },
+        {
+            "load_to_bronze": {
+                "adb_brewdat_library_version": "v0.9.0",
+                "adb_notebook_path": "//brewdat-maz-maz-supply-rsi-repo-adb/data_integration/sap_dop/load_brz_generic_parquet",
+                "additional_parameters": " { \"enable_change_data_feed\": true, \"partition_column\": \"__ref_date\", \"partition_date_format\" : \"yyyyMM\" } ",
+                "incremental_load": true,
+                "is_enabled": true,
+                "reset_stream_checkpoint": false,
+                "source_raw_zone": "do",
+                "source_system": "sap_dop",
+                "source_system_raw": "sap_dop",
+                "source_system_zone": "maz",
+                "source_table": "do_STKO",
+                "target_business_domain": "supply",
+                "target_business_subdomain":  "Production Management",
+                "target_database": "brz_maz_supply_sap_dop",
+                "target_table": "do_stko",
+                "target_zone": "maz",
+                "source_system_country": "do"
+            },
+            "load_to_silver": {
+                "adb_brewdat_library_version": "v0.9.0",
+                "adb_notebook_path": "//brewdat-maz-maz-supply-rsi-repo-adb/data_integration/sap_dop/load_slv_generic_parquet",
+                "additional_parameters": {
+                    "enable_change_data_feed": "true"
+                },
+                "column_mapping": [
+                    {
+                        "source_column_name": "source_commit_ts",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "target_apply_ts",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "source_commit_dt",
+                        "date_format": "string"
+                    },
+                    {
+                        "source_column_name": "target_apply_dt",
+                        "date_format": "string"
+                    },
+                    {
+                        "source_column_name": "header__change_seq",
+                        "target_data_type": "STRING"
+                    },
+                    {
+                        "source_column_name": "op_ind",
+                        "target_data_type": "STRING"
+                    },
+                    {
+                        "source_column_name": "__insert_gmt_ts",
+                        "target_data_type": "timestamp"
+                    },
+                    {
+                        "source_column_name": "__update_gmt_ts",
+                        "target_data_type": "timestamp"
+                    }
+                ],
+                "incremental_load": true,
+                "is_enabled": false,
+                "key_columns": [
+                    "mandt",
+                    "spras",
+                    "mtart"
+                ],
+                "load_type": "UPSERT",
+                "partition_columns": [],
+                "reset_stream_checkpoint": false,
+                "source_database": "brz_maz_supply_sap_dop",
+                "source_system": "sap_dop",
+                "source_system_raw": "sap_dop",
+                "source_system_zone": "maz",
+                "source_table": "do_stko",
+                "target_business_domain": "supply",
+                "target_business_subdomain":  "Production Management",
+                "target_database": "slv_maz_supply_sap_dop",
+                "target_table": "do_stko",
+                "target_zone": "maz",
+                "source_system_country": "do",
+                "watermark_column": [
+                    "source_commit_ts",
+                    "header__change_seq"
+                ]
+            }
         }
     ]
 }
