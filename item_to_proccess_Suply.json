@@ -5,7 +5,7 @@
             "load_to_bronze": {
                 "adb_brewdat_library_version": "v0.9.0",
                 "adb_notebook_path": "//brewdat-maz-maz-supply-rsi-repo-adb/data_integration/sap_dop/load_brz_generic_parquet",
-                "additional_parameters": " { \"enable_change_data_feed\": true, \"partition_column\": \"__ref_date\", \"partition_date_format\" : \"yyyyMM\" } ",
+                "additional_parameters": " { \"enable_change_data_feed\": true, \"partition_column\": \"ersda\", \"partition_date_format\" : \"yyyy\" } ",
                 "incremental_load": true,
                 "is_enabled": true,
                 "reset_stream_checkpoint": false,
@@ -199,6 +199,10 @@
                         "target_data_type": "STRING"
                     },
                     {
+                        "source_column_name": "__partition_column",
+                        "target_data_type": "int"
+                    },
+                    {
                         "source_column_name": "__insert_gmt_ts",
                         "target_data_type": "timestamp"
                     },
@@ -216,7 +220,9 @@
                     "charg"
                 ],
                 "load_type": "UPSERT",
-                "partition_columns": ["ersda"],
+                "partition_columns": [
+                    "__partition_column"
+                ],
                 "reset_stream_checkpoint": false,
                 "source_database": "brz_maz_supply_sap_dop",
                 "source_system": "sap_dop",
@@ -239,7 +245,7 @@
             "load_to_bronze": {
                 "adb_brewdat_library_version": "v0.9.0",
                 "adb_notebook_path": "//brewdat-maz-maz-supply-rsi-repo-adb/data_integration/sap_dop/load_brz_generic_parquet",
-                "additional_parameters": " { \"enable_change_data_feed\": true, \"partition_column\": \"__ref_date\", \"partition_date_format\" : \"yyyyMM\" } ",
+                "additional_parameters": " { \"enable_change_data_feed\": true, \"partition_column\": \"ersda\", \"partition_date_format\" : \"yyyy\" } ",
                 "incremental_load": true,
                 "is_enabled": true,
                 "reset_stream_checkpoint": false,
@@ -445,6 +451,10 @@
                         "target_data_type": "string"
                     },
                     {
+                        "source_column_name": "__partition_column",
+                        "target_data_type": "int"
+                    },
+                    {
                         "source_column_name": "__insert_gmt_ts",
                         "target_data_type": "timestamp"
                     },
@@ -464,7 +474,7 @@
                     
                 ],
                 "load_type": "UPSERT",
-                "partition_columns": ["ersda"],
+                "partition_columns": ["__partition_column"],
                 "reset_stream_checkpoint": false,
                 "source_database": "brz_maz_supply_sap_dop",
                 "source_system": "sap_dop",
@@ -487,7 +497,7 @@
             "load_to_bronze": {
                 "adb_brewdat_library_version": "v0.9.0",
                 "adb_notebook_path": "//brewdat-maz-maz-supply-rsi-repo-adb/data_integration/sap_dop/load_brz_generic_parquet",
-                "additional_parameters": " { \"enable_change_data_feed\": true, \"partition_column\": \"__ref_date\", \"partition_date_format\" : \"yyyyMM\" } ",
+                "additional_parameters": " { \"enable_change_data_feed\": true, \"partition_column\": \"andat\", \"partition_date_format\" : \"yyyy\" } ",
                 "incremental_load": true,
                 "is_enabled": true,
                 "reset_stream_checkpoint": false,
@@ -589,6 +599,10 @@
                         "target_data_type": "STRING"
                     },
                     {
+                        "source_column_name": "__partition_column",
+                        "target_data_type": "int"
+                    },
+                    {
                         "source_column_name": "__insert_gmt_ts",
                         "target_data_type": "timestamp"
                     },
@@ -608,7 +622,7 @@
                     "stlal"
                 ],
                 "load_type": "UPSERT",
-                "partition_columns": ["andat"],
+                "partition_columns": ["__partition_column"],
                 "reset_stream_checkpoint": false,
                 "source_database": "brz_maz_supply_sap_dop",
                 "source_system": "sap_dop",
@@ -631,7 +645,7 @@
             "load_to_bronze": {
                 "adb_brewdat_library_version": "v0.9.0",
                 "adb_notebook_path": "//brewdat-maz-maz-supply-rsi-repo-adb/data_integration/sap_dop/load_brz_generic_parquet",
-                "additional_parameters": " { \"enable_change_data_feed\": true, \"partition_column\": \"__ref_date\", \"partition_date_format\" : \"yyyyMM\" } ",
+                "additional_parameters": " { \"enable_change_data_feed\": true, \"partition_column\": \"andat\", \"partition_date_format\" : \"yyyy\" } ",
                 "incremental_load": true,
                 "is_enabled": true,
                 "reset_stream_checkpoint": false,
@@ -767,6 +781,10 @@
                         "target_data_type": "STRING"
                     },
                     {
+                        "source_column_name": "__partition_column",
+                        "target_data_type": "int"
+                    },
+                    {
                         "source_column_name": "__insert_gmt_ts",
                         "target_data_type": "timestamp"
                     },
@@ -786,7 +804,7 @@
                     "stasz"
                 ],
                 "load_type": "UPSERT",
-                "partition_columns": ["andat"],
+                "partition_columns": ["__partition_column"],
                 "reset_stream_checkpoint": false,
                 "source_database": "brz_maz_supply_sap_dop",
                 "source_system": "sap_dop",
@@ -809,7 +827,7 @@
             "load_to_bronze": {
                 "adb_brewdat_library_version": "v0.9.0",
                 "adb_notebook_path": "//brewdat-maz-maz-supply-rsi-repo-adb/data_integration/sap_dop/load_brz_generic_parquet",
-                "additional_parameters": " { \"enable_change_data_feed\": true, \"partition_column\": \"__ref_date\", \"partition_date_format\" : \"yyyyMM\" } ",
+                "additional_parameters": " { \"enable_change_data_feed\": true, \"partition_column\": \"andat\", \"partition_date_format\" : \"yyyy\" } ",
                 "incremental_load": true,
                 "is_enabled": true,
                 "reset_stream_checkpoint": false,
@@ -1341,6 +1359,10 @@
                         "target_data_type": "STRING"
                     },
                     {
+                        "source_column_name": "__partition_column",
+                        "target_data_type": "int"
+                    },
+                    {
                         "source_column_name": "__insert_gmt_ts",
                         "target_data_type": "timestamp"
                     },
@@ -1359,7 +1381,7 @@
                     "stpoz"
                 ],
                 "load_type": "UPSERT",
-                "partition_columns": ["andat"],
+                "partition_columns": ["__partition_column"],
                 "reset_stream_checkpoint": false,
                 "source_database": "brz_maz_supply_sap_dop",
                 "source_system": "sap_dop",
@@ -1382,7 +1404,7 @@
             "load_to_bronze": {
                 "adb_brewdat_library_version": "v0.9.0",
                 "adb_notebook_path": "//brewdat-maz-maz-supply-rsi-repo-adb/data_integration/sap_dop/load_brz_generic_parquet",
-                "additional_parameters": " { \"enable_change_data_feed\": true, \"partition_column\": \"__ref_date\", \"partition_date_format\" : \"yyyyMM\" } ",
+                "additional_parameters": " { \"enable_change_data_feed\": true, \"partition_column\": \"andat\", \"partition_date_format\" : \"yyyy\" } ",
                 "incremental_load": true,
                 "is_enabled": true,
                 "reset_stream_checkpoint": false,
@@ -1583,6 +1605,10 @@
                         "target_data_type": "STRING"
                     },
                     {
+                        "source_column_name": "__partition_column",
+                        "target_data_type": "int"
+                    },
+                    {
                         "source_column_name": "__insert_gmt_ts",
                         "target_data_type": "timestamp"
                     },
@@ -1601,7 +1627,7 @@
                     "stkoz"
                 ],
                 "load_type": "UPSERT",
-                "partition_columns": ["andat"],
+                "partition_columns": ["__partition_column"],
                 "reset_stream_checkpoint": false,
                 "source_database": "brz_maz_supply_sap_dop",
                 "source_system": "sap_dop",
