@@ -1542,43 +1542,6 @@
                     {
                         "source_column_name": "guidx",
                         "target_data_type": "string"
-                    },
-                    {
-                        "source_column_name": "valid_to",
-                        "target_data_type": "date",
-                        "date_format": "yyyy-mm-dd"
-                    },
-                    {
-                        "source_column_name": "ecn_to",
-                        "target_data_type": "string"
-                    },
-                    {
-                        "source_column_name": "bom_versn",
-                        "target_data_type": "string"
-                    },
-                    {
-                        "source_column_name": "versnst",
-                        "target_data_type": "string"
-                    },
-                    {
-                        "source_column_name": "versnlastind",
-                        "target_data_type": "string"
-                    },
-                    {
-                        "source_column_name": "lastchangedatetime",
-                        "target_data_type": "smallint"
-                    },
-                    {
-                        "source_column_name": "bom_ain_ind",
-                        "target_data_type": "string"
-                    },
-                    {
-                        "source_column_name": "bom_prev_versn",
-                        "target_data_type": "string"
-                    },
-                    {
-                        "source_column_name": "dummy_stko_incl_eew_ps",
-                        "target_data_type": "string"
                     },                    
                     {
                         "source_column_name": "source_commit_ts",
