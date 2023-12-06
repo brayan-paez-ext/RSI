@@ -318,51 +318,58 @@
                     },
                     {
                         "source_column_name": "clabs",
-                        "target_data_type": "Decimal(,)"
+                        "target_data_type": "Decimal(13,3)"
                     },
                     {
                         "source_column_name": "cumlm",
-                        "target_data_type": "Decimal(,)"
+                        "target_data_type": "Decimal(13,3)"
                     },
                     {
                         "source_column_name": "cinsm",
-                        "target_data_type": "Decimal(,)"
+                        "target_data_type": "Decimal(13,3)"
                     },
                     {
                         "source_column_name": "ceinm",
-                        "target_data_type": "Decimal(,)"
+                        "target_data_type": "Decimal(13,3)"
                     },
                     {
                         "source_column_name": "cspem",
-                        "target_data_type": "Decimal(,)"
+                        "target_data_type": "Decimal(13,3)"
                     },
                     {
                         "source_column_name": "cretm",
-                        "target_data_type": "Decimal(,)"
+                        "target_data_type": "Decimal(13,3)"
+
                     },
                     {
                         "source_column_name": "cvmla",
-                        "target_data_type": "Decimal(,)"
+                        "target_data_type": "Decimal(13,3)"
+
                     },
                     {
                         "source_column_name": "cvmum",
-                        "target_data_type": "Decimal(,)"
+                        "target_data_type": "Decimal(13,3)"
+
                     },
                     {
                         "source_column_name": "cvmin",
-                        "target_data_type": "Decimal(,)"
+                        "target_data_type": "Decimal(13,3)"
+
                     },
                     {
                         "source_column_name": "cvmei",
-                        "target_data_type": "Decimal(,)"
+                        "target_data_type": "Decimal(13,3)"
+
                     },
                     {
                         "source_column_name": "cvmsp",
-                        "target_data_type": "Decimal(,)"
+                        "target_data_type": "Decimal(13,3)"
+
                     },
                     {
                         "source_column_name": "cvmre",
-                        "target_data_type": "Decimal(,)"
+                        "target_data_type": "Decimal(13,3)"
+
                     },
                     {
                         "source_column_name": "kzicl",
@@ -529,11 +536,11 @@
                     }, 
                     {
                         "source_column_name": "losvn", 
-                        "target_data_type": "Decimal(13,0)"
+                        "target_data_type": "Decimal(13,3)"
                     }, 
                     {
                         "source_column_name": "losbs", 
-                        "target_data_type": "Decimal(13,0)"
+                        "target_data_type": "Decimal(13,3)"
                     }, 
                     {
                         "source_column_name": "andat", 
@@ -597,7 +604,8 @@
                     "matnr",
                     "werks",
                     "stlan",
-                    "stlnr"
+                    "stlnr",
+                    "stlal"
                 ],
                 "load_type": "UPSERT",
                 "partition_columns": ["andat"],
@@ -913,7 +921,7 @@
                     }, 
                     {
                         "source_column_name": "menge", 
-                        "target_data_type": "Decimal(13,0)"
+                        "target_data_type": "Decimal(13,3)"
                     }, 
                     {
                         "source_column_name": "fmeng", 
@@ -1017,7 +1025,7 @@
                     }, 
                     {
                         "source_column_name": "preis", 
-                        "target_data_type": "Decimal(11,0)"
+                        "target_data_type": "Decimal(11,2)"
                     }, 
                     {
                         "source_column_name": "peinh", 
@@ -1033,19 +1041,19 @@
                     }, 
                     {
                         "source_column_name": "roanz", 
-                        "target_data_type": "Decimal(13,0)"
+                        "target_data_type": "Decimal(13,3)"
                     }, 
                     {
                         "source_column_name": "roms1", 
-                        "target_data_type": "Decimal(13,0)"
+                        "target_data_type": "Decimal(13,3)"
                     }, 
                     {
                         "source_column_name": "roms2", 
-                        "target_data_type": "Decimal(13,0)"
+                        "target_data_type": "Decimal(13,3)"
                     }, 
                     {
                         "source_column_name": "roms3", 
-                        "target_data_type": "Decimal(13,0)"
+                        "target_data_type": "Decimal(13,3)"
                     }, 
                     {
                         "source_column_name": "romei", 
@@ -1053,7 +1061,7 @@
                     }, 
                     {
                         "source_column_name": "romen", 
-                        "target_data_type": "Decimal(13,0)"
+                        "target_data_type": "Decimal(13,3)"
                     }, 
                     {
                         "source_column_name": "rform", 
@@ -1398,6 +1406,159 @@
                 },
                 "column_mapping": [
                     {
+                        "source_column_name": "mandt",
+                        "target_data_type": "smallint"
+                    },
+                    {
+                        "source_column_name": "stlty",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "stlnr",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "stlal",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "stkoz",
+                        "target_data_type": "int"
+                    },
+                    {
+                        "source_column_name": "datuv",
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    },
+                    {
+                        "source_column_name": "techv",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "aennr",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "lkenz",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "loekz",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "vgkzl",
+                        "target_data_type": "int"
+                    },
+                    {
+                        "source_column_name": "andat",
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    },
+                    {
+                        "source_column_name": "annam",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "aedat",
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    },
+                    {
+                        "source_column_name": "aenam",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "bmein",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "bmeng",
+                        "target_data_type": "Decimal(13,3)"
+                    },
+                    {
+                        "source_column_name": "cadkz",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "labor",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "ltxsp",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "stktx",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "stlst",
+                        "target_data_type": "tinyint"
+                    },
+                    {
+                        "source_column_name": "wrkan",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "dvdat",
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    },
+                    {
+                        "source_column_name": "dvnam",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "aehlp",
+                        "target_data_type": "tinyint"
+                    },
+                    {
+                        "source_column_name": "alekz",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "guidx",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "valid_to",
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    },
+                    {
+                        "source_column_name": "ecn_to",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "bom_versn",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "versnst",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "versnlastind",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "lastchangedatetime",
+                        "target_data_type": "smallint"
+                    },
+                    {
+                        "source_column_name": "bom_ain_ind",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "bom_prev_versn",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "dummy_stko_incl_eew_ps",
+                        "target_data_type": "string"
+                    },                    
+                    {
                         "source_column_name": "source_commit_ts",
                         "target_data_type": "string"
                     },
@@ -1434,8 +1595,10 @@
                 "is_enabled": false,
                 "key_columns": [
                     "mandt",
-                    "spras",
-                    "mtart"
+                    "stlty",
+                    "stlnr",
+                    "stlal",
+                    "stkoz"
                 ],
                 "load_type": "UPSERT",
                 "partition_columns": ["andat"],
