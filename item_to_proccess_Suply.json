@@ -216,7 +216,7 @@
                     "charg"
                 ],
                 "load_type": "UPSERT",
-                "partition_columns": [],
+                "partition_columns": ["ersda"],
                 "reset_stream_checkpoint": false,
                 "source_database": "brz_maz_supply_sap_dop",
                 "source_system": "sap_dop",
@@ -457,7 +457,7 @@
                     
                 ],
                 "load_type": "UPSERT",
-                "partition_columns": [],
+                "partition_columns": ["ersda"],
                 "reset_stream_checkpoint": false,
                 "source_database": "brz_maz_supply_sap_dop",
                 "source_system": "sap_dop",
@@ -600,7 +600,7 @@
                     "stlnr"
                 ],
                 "load_type": "UPSERT",
-                "partition_columns": [],
+                "partition_columns": ["andat"],
                 "reset_stream_checkpoint": false,
                 "source_database": "brz_maz_supply_sap_dop",
                 "source_system": "sap_dop",
@@ -778,7 +778,7 @@
                     "stasz"
                 ],
                 "load_type": "UPSERT",
-                "partition_columns": [],
+                "partition_columns": ["andat"],
                 "reset_stream_checkpoint": false,
                 "source_database": "brz_maz_supply_sap_dop",
                 "source_system": "sap_dop",
@@ -1351,7 +1351,7 @@
                     "stpoz"
                 ],
                 "load_type": "UPSERT",
-                "partition_columns": [],
+                "partition_columns": ["andat"],
                 "reset_stream_checkpoint": false,
                 "source_database": "brz_maz_supply_sap_dop",
                 "source_system": "sap_dop",
@@ -1438,7 +1438,7 @@
                     "mtart"
                 ],
                 "load_type": "UPSERT",
-                "partition_columns": [],
+                "partition_columns": ["andat"],
                 "reset_stream_checkpoint": false,
                 "source_database": "brz_maz_supply_sap_dop",
                 "source_system": "sap_dop",
