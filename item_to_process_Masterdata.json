@@ -90,7 +90,7 @@
                       }
                 ],
                 "incremental_load": true,
-                "is_enabled": false,
+                "is_enabled": true,
                 "key_columns": [
                     "mandt",
                     "spras",
@@ -197,7 +197,7 @@
                       }
                 ],
                 "incremental_load": true,
-                "is_enabled": false,
+                "is_enabled": true,
                 "key_columns": [
                     "mandt",
                     "spras",
@@ -300,7 +300,7 @@
                       }  
                 ],
                 "incremental_load": true,
-                "is_enabled": false,
+                "is_enabled": true,
                 "key_columns": [
                     "mandt",
                     "spras",
@@ -507,7 +507,7 @@
                     }
                 ],
                 "incremental_load": true,
-                "is_enabled": false,
+                "is_enabled": true,
                 "key_columns": [
                     "mandt",
                     "matnr",
@@ -674,7 +674,7 @@
                     }
                 ],
                 "incremental_load": true,
-                "is_enabled": false,
+                "is_enabled": true,
                 "key_columns": [
                     "mandt",
                     "werks",
