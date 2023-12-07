@@ -367,13 +367,11 @@
                     },
                     {
                         "source_column_name": "umrez",
-                        "target_data_type": "date",
-                        "date_format": "yyyy-mm-dd"
+                        "target_data_type": "int"
                     },
                     {
                         "source_column_name": "umren",
-                        "target_data_type": "date",
-                        "date_format": "yyyy-mm-dd"
+                        "target_data_type": "int"
                     },
                     {
                         "source_column_name": "eannr",
@@ -389,15 +387,15 @@
                     },
                     {
                         "source_column_name": "laeng",
-                        "target_data_type": "Decimal(13,3)"
+                        "target_data_type": "Decimal(13,0)"
                     },
                     {
                         "source_column_name": "breit",
-                        "target_data_type": "Decimal(13,3)"
+                        "target_data_type": "Decimal(13,0)"
                     },
                     {
                         "source_column_name": "hoehe",
-                        "target_data_type": "Decimal(13,3)"
+                        "target_data_type": "Decimal(13,0)"
                     },
                     {
                         "source_column_name": "meabm",
@@ -405,7 +403,7 @@
                     },
                     {
                         "source_column_name": "volum",
-                        "target_data_type": "Decimal(13,3)"
+                        "target_data_type": "Decimal(13,0)"
                     },
                     {
                         "source_column_name": "voleh",
@@ -413,7 +411,7 @@
                     },
                     {
                         "source_column_name": "brgew",
-                        "target_data_type": "Decimal(13,3)"
+                        "target_data_type": "Decimal(13,0)"
                     },
                     {
                         "source_column_name": "gewei",
@@ -425,11 +423,11 @@
                     },
                     {
                         "source_column_name": "atinn",
-                        "target_data_type": "string"
+                        "target_data_type": "bigint"
                     },
                     {
                         "source_column_name": "mesrt",
-                        "target_data_type": "string"
+                        "target_data_type": "tinyint"
                     },
                     {
                         "source_column_name": "xfhdw",
@@ -457,8 +455,7 @@
                     },
                     {
                         "source_column_name": "nest_ftr",
-                        "target_data_type": "date",
-                        "date_format": "yyyy-mm-dd"
+                        "target_data_type": "smallint"
                     },
                     {
                         "source_column_name": "max_stack",
@@ -466,13 +463,12 @@
                     },
                     {
                         "source_column_name": "capause",
-                        "target_data_type": "date",
-                        "date_format": "yyyy-mm-dd"
+                        "target_data_type": "Decimal(15,3)"
                     },
                     {
                         "source_column_name": "ty2tq",
                         "target_data_type": "string"
-                    },
+                    },                    
                     {
                         "source_column_name": "source_commit_ts",
                         "target_data_type": "string"

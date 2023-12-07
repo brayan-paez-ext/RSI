@@ -296,6 +296,7 @@
                         "source_column_name": "ersda",
                         "target_data_type": "date",
                         "date_format": "yyyy-mm-dd"
+
                     },
                     {
                         "source_column_name": "ernam",
@@ -312,11 +313,11 @@
                     },
                     {
                         "source_column_name": "lfgja",
-                        "target_data_type": "string"
+                        "target_data_type": "smallint"
                     },
                     {
                         "source_column_name": "lfmon",
-                        "target_data_type": "string"
+                        "target_data_type": "tinyint"
                     },
                     {
                         "source_column_name": "sperc",
@@ -345,37 +346,30 @@
                     {
                         "source_column_name": "cretm",
                         "target_data_type": "Decimal(13,3)"
-
                     },
                     {
                         "source_column_name": "cvmla",
                         "target_data_type": "Decimal(13,3)"
-
                     },
                     {
                         "source_column_name": "cvmum",
                         "target_data_type": "Decimal(13,3)"
-
                     },
                     {
                         "source_column_name": "cvmin",
                         "target_data_type": "Decimal(13,3)"
-
                     },
                     {
                         "source_column_name": "cvmei",
                         "target_data_type": "Decimal(13,3)"
-
                     },
                     {
                         "source_column_name": "cvmsp",
                         "target_data_type": "Decimal(13,3)"
-
                     },
                     {
                         "source_column_name": "cvmre",
                         "target_data_type": "Decimal(13,3)"
-
                     },
                     {
                         "source_column_name": "kzicl",
@@ -420,7 +414,7 @@
                     },
                     {
                         "source_column_name": "chjin",
-                        "target_data_type": "string"
+                        "target_data_type": "smallint"
                     },
                     {
                         "source_column_name": "chrue",
