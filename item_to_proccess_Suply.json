@@ -192,11 +192,11 @@
                     },
                     {
                         "source_column_name": "header__change_seq",
-                        "target_data_type": "STRING"
+                        "target_data_type": "string"
                     },
                     {
                         "source_column_name": "op_ind",
-                        "target_data_type": "STRING"
+                        "target_data_type": "string"
                     },
                     {
                         "source_column_name": "__partition_column",
@@ -592,11 +592,11 @@
                     },
                     {
                         "source_column_name": "header__change_seq",
-                        "target_data_type": "STRING"
+                        "target_data_type": "string"
                     },
                     {
                         "source_column_name": "op_ind",
-                        "target_data_type": "STRING"
+                        "target_data_type": "string"
                     },
                     {
                         "source_column_name": "__partition_column",
@@ -774,11 +774,11 @@
                     },
                     {
                         "source_column_name": "header__change_seq",
-                        "target_data_type": "STRING"
+                        "target_data_type": "string"
                     },
                     {
                         "source_column_name": "op_ind",
-                        "target_data_type": "STRING"
+                        "target_data_type": "string"
                     },
                     {
                         "source_column_name": "__partition_column",
@@ -1352,11 +1352,11 @@
                     },
                     {
                         "source_column_name": "header__change_seq",
-                        "target_data_type": "STRING"
+                        "target_data_type": "string"
                     },
                     {
                         "source_column_name": "op_ind",
-                        "target_data_type": "STRING"
+                        "target_data_type": "string"
                     },
                     {
                         "source_column_name": "__partition_column",
@@ -1561,11 +1561,11 @@
                     },
                     {
                         "source_column_name": "header__change_seq",
-                        "target_data_type": "STRING"
+                        "target_data_type": "string"
                     },
                     {
                         "source_column_name": "op_ind",
-                        "target_data_type": "STRING"
+                        "target_data_type": "string"
                     },
                     {
                         "source_column_name": "__partition_column",
