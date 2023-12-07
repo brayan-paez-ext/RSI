@@ -192,11 +192,11 @@
                     },
                     {
                         "source_column_name": "header__change_seq",
-                        "target_data_type": "STRING"
+                        "target_data_type": "string"
                     },
                     {
                         "source_column_name": "op_ind",
-                        "target_data_type": "STRING"
+                        "target_data_type": "string"
                     },
                     {
                         "source_column_name": "__partition_column",
@@ -586,11 +586,11 @@
                     },
                     {
                         "source_column_name": "header__change_seq",
-                        "target_data_type": "STRING"
+                        "target_data_type": "string"
                     },
                     {
                         "source_column_name": "op_ind",
-                        "target_data_type": "STRING"
+                        "target_data_type": "string"
                     },
                     {
                         "source_column_name": "__partition_column",
@@ -768,11 +768,11 @@
                     },
                     {
                         "source_column_name": "header__change_seq",
-                        "target_data_type": "STRING"
+                        "target_data_type": "string"
                     },
                     {
                         "source_column_name": "op_ind",
-                        "target_data_type": "STRING"
+                        "target_data_type": "string"
                     },
                     {
                         "source_column_name": "__partition_column",
@@ -941,11 +941,11 @@
                     }, 
                     {
                         "source_column_name": "ausch", 
-                        "target_data_type": "int"
+                        "target_data_type": "Decimal(5,2)"
                     }, 
                     {
                         "source_column_name": "avoau", 
-                        "target_data_type": "int"
+                        "target_data_type": "Decimal(5,2)"
                     }, 
                     {
                         "source_column_name": "netau", 
@@ -1346,11 +1346,11 @@
                     },
                     {
                         "source_column_name": "header__change_seq",
-                        "target_data_type": "STRING"
+                        "target_data_type": "string"
                     },
                     {
                         "source_column_name": "op_ind",
-                        "target_data_type": "STRING"
+                        "target_data_type": "string"
                     },
                     {
                         "source_column_name": "__partition_column",
@@ -1555,11 +1555,11 @@
                     },
                     {
                         "source_column_name": "header__change_seq",
-                        "target_data_type": "STRING"
+                        "target_data_type": "string"
                     },
                     {
                         "source_column_name": "op_ind",
-                        "target_data_type": "STRING"
+                        "target_data_type": "string"
                     },
                     {
                         "source_column_name": "__partition_column",
