@@ -947,11 +947,11 @@
                     }, 
                     {
                         "source_column_name": "ausch", 
-                        "target_data_type": "int"
+                        "target_data_type": "Decimal(5,2)"
                     }, 
                     {
                         "source_column_name": "avoau", 
-                        "target_data_type": "int"
+                        "target_data_type": "Decimal(5,2)"
                     }, 
                     {
                         "source_column_name": "netau", 
