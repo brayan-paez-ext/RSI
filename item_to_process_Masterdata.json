@@ -387,15 +387,15 @@
                     },
                     {
                         "source_column_name": "laeng",
-                        "target_data_type": "Decimal(13,0)"
+                        "target_data_type": "Decimal(13,3)"
                     },
                     {
                         "source_column_name": "breit",
-                        "target_data_type": "Decimal(13,0)"
+                        "target_data_type": "Decimal(13,3)"
                     },
                     {
                         "source_column_name": "hoehe",
-                        "target_data_type": "Decimal(13,0)"
+                        "target_data_type": "Decimal(13,3)"
                     },
                     {
                         "source_column_name": "meabm",
@@ -403,7 +403,7 @@
                     },
                     {
                         "source_column_name": "volum",
-                        "target_data_type": "Decimal(13,0)"
+                        "target_data_type": "Decimal(13,3)"
                     },
                     {
                         "source_column_name": "voleh",
@@ -411,7 +411,7 @@
                     },
                     {
                         "source_column_name": "brgew",
-                        "target_data_type": "Decimal(13,0)"
+                        "target_data_type": "Decimal(13,3)"
                     },
                     {
                         "source_column_name": "gewei",
