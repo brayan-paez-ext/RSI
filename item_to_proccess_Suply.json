@@ -1592,7 +1592,7 @@
                 "source_system_zone": "maz",
                 "source_table": "do_stko",
                 "target_business_domain": "supply",
-                "target_business_subdomain":  "Production Management",
+                "target_business_subdomain": "Production Management",
                 "target_database": "slv_maz_supply_sap_dop",
                 "target_table": "do_stko",
                 "target_zone": "maz",
