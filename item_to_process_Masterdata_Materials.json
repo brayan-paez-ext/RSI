@@ -1,0 +1,208 @@
+{
+    "batch_name_suffix": "slv_maz_masterdata_sap_dop_do_d",
+    "pipelines": [
+        {
+            "load_to_bronze": {
+                "adb_brewdat_library_version": "v0.9.0",
+                "adb_notebook_path": "//brewdat-maz-maz-masterdata-rsi-repo-adb/data_integration/sap_dop/load_brz_generic_parquet",
+                "additional_parameters": " { \"enable_change_data_feed\": true, \"partition_column\": \"__ref_date\", \"partition_date_format\" : \"yyyyMM\" } ",
+                "incremental_load": true,
+                "is_enabled": true,
+                "reset_stream_checkpoint": false,
+                "source_raw_zone": "do",
+                "source_system": "sap_dop",
+                "source_system_raw": "sap_dop",
+                "source_system_zone": "maz",
+                "source_table": "do_MARM",
+                "target_business_domain": "masterdata",
+                "target_business_subdomain": "materials",
+                "target_database": "brz_maz_masterdata_sap_dop",
+                "target_table": "do_marm",
+                "target_zone": "maz",
+                "source_system_country": "do"
+            },
+            "load_to_silver": {
+                "adb_brewdat_library_version": "v0.9.0",
+                "adb_notebook_path": "//brewdat-maz-maz-masterdata-rsi-repo-adb/data_integration/sap_dop/load_slv_generic_parquet",
+                "additional_parameters": {
+                    "enable_change_data_feed": "true"
+                },
+                "column_mapping": [
+                    {
+                        "source_column_name": "mandt",
+                        "target_data_type": "smallint"
+                    },
+                    {
+                        "source_column_name": "matnr",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "meinh",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "umrez",
+                        "target_data_type": "int"
+                    },
+                    {
+                        "source_column_name": "umren",
+                        "target_data_type": "int"
+                    },
+                    {
+                        "source_column_name": "eannr",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "ean11",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "numtp",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "laeng",
+                        "target_data_type": "Decimal(13,3)"
+                    },
+                    {
+                        "source_column_name": "breit",
+                        "target_data_type": "Decimal(13,3)"
+                    },
+                    {
+                        "source_column_name": "hoehe",
+                        "target_data_type": "Decimal(13,3)"
+                    },
+                    {
+                        "source_column_name": "meabm",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "volum",
+                        "target_data_type": "Decimal(13,3)"
+                    },
+                    {
+                        "source_column_name": "voleh",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "brgew",
+                        "target_data_type": "Decimal(13,3)"
+                    },
+                    {
+                        "source_column_name": "gewei",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "mesub",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "atinn",
+                        "target_data_type": "bigint"
+                    },
+                    {
+                        "source_column_name": "mesrt",
+                        "target_data_type": "tinyint"
+                    },
+                    {
+                        "source_column_name": "xfhdw",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "xbeww",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "kzwso",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "msehi",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "bflme_marm",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "gtin_variant",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "nest_ftr",
+                        "target_data_type": "smallint"
+                    },
+                    {
+                        "source_column_name": "max_stack",
+                        "target_data_type": "tinyint"
+                    },
+                    {
+                        "source_column_name": "capause",
+                        "target_data_type": "Decimal(15,3)"
+                    },
+                    {
+                        "source_column_name": "ty2tq",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "source_commit_ts",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "target_apply_ts",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "source_commit_dt",
+                        "date_format": "string"
+                    },
+                    {
+                        "source_column_name": "target_apply_dt",
+                        "date_format": "string"
+                    },
+                    {
+                        "source_column_name": "header__change_seq",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "op_ind",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "__insert_gmt_ts",
+                        "target_data_type": "timestamp"
+                    },
+                    {
+                        "source_column_name": "__update_gmt_ts",
+                        "target_data_type": "timestamp"
+                    }
+                ],
+                "incremental_load": true,
+                "is_enabled": true,
+                "key_columns": [
+                    "mandt",
+                    "matnr",
+                    "meinh"
+                ],
+                "load_type": "UPSERT",
+                "partition_columns": [],
+                "reset_stream_checkpoint": false,
+                "source_database": "brz_maz_masterdata_sap_dop",
+                "source_system": "sap_dop",
+                "source_system_raw": "sap_dop",
+                "source_system_zone": "maz",
+                "source_table": "do_marm",
+                "target_business_domain": "masterdata",
+                "target_business_subdomain": "materials",
+                "target_database": "slv_maz_masterdata_sap_dop",
+                "target_table": "do_marm",
+                "target_zone": "maz",
+                "source_system_country": "do",
+                "watermark_column": [
+                    "source_commit_ts",
+                    "header__change_seq"
+                ]
+            }
+        }
+    ]
+}

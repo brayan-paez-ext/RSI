@@ -1,0 +1,490 @@
+{
+    "batch_name_suffix": "slv_maz_supply_sap_dop_do_d",
+    "pipelines": [
+        {
+            "load_to_bronze": {
+                "adb_brewdat_library_version": "v0.9.0",
+                "adb_notebook_path": "//brewdat-maz-maz-supply-rsi-repo-adb/data_integration/sap_dop/load_brz_generic_parquet",
+                "additional_parameters": " { \"enable_change_data_feed\": true, \"partition_column\": \"ersda\", \"partition_date_format\" : \"yyyy\" } ",
+                "incremental_load": true,
+                "is_enabled": true,
+                "reset_stream_checkpoint": false,
+                "source_raw_zone": "do",
+                "source_system": "sap_dop",
+                "source_system_raw": "sap_dop",
+                "source_system_zone": "maz",
+                "source_table": "do_MCH1",
+                "target_business_domain": "supply",
+                "target_business_subdomain": "production",
+                "target_database": "brz_maz_supply_sap_dop",
+                "target_table": "do_mch1",
+                "target_zone": "maz",
+                "source_system_country": "do"
+            },
+            "load_to_silver": {
+                "adb_brewdat_library_version": "v0.9.0",
+                "adb_notebook_path": "//brewdat-maz-maz-supply-rsi-repo-adb/data_integration/sap_dop/load_slv_generic_parquet",
+                "additional_parameters": {
+                    "enable_change_data_feed": "true"
+                },
+                "column_mapping": [
+                    {
+                        "source_column_name": "mandt",
+                        "target_data_type": "smallint"
+                    },
+                    {
+                        "source_column_name": "matnr",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "charg",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "lvorm",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "ersda",
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    },
+                    {
+                        "source_column_name": "ernam",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "aenam",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "laeda",
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    },
+                    {
+                        "source_column_name": "verab",
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    },
+                    {
+                        "source_column_name": "vfdat",
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    },
+                    {
+                        "source_column_name": "zusch",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "zustd",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "zaedt",
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    },
+                    {
+                        "source_column_name": "lifnr",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "licha",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "vlcha",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "vlwrk",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "vlmat",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "chame",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "lwedt",
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    },
+                    {
+                        "source_column_name": "fvdt1",
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    },
+                    {
+                        "source_column_name": "fvdt2",
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    },
+                    {
+                        "source_column_name": "fvdt3",
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    },
+                    {
+                        "source_column_name": "fvdt4",
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    },
+                    {
+                        "source_column_name": "fvdt5",
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    },
+                    {
+                        "source_column_name": "fvdt6",
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    },
+                    {
+                        "source_column_name": "herkl",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "herkr",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "mtver",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "qndat",
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    },
+                    {
+                        "source_column_name": "hsdat",
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    },
+                    {
+                        "source_column_name": "cuobj_bm",
+                        "target_data_type": "bigint"
+                    },
+                    {
+                        "source_column_name": "deact_bm",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "source_commit_ts",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "target_apply_ts",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "source_commit_dt",
+                        "date_format": "string"
+                    },
+                    {
+                        "source_column_name": "target_apply_dt",
+                        "date_format": "string"
+                    },
+                    {
+                        "source_column_name": "header__change_seq",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "op_ind",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "__partition_column",
+                        "target_data_type": "int"
+                    },
+                    {
+                        "source_column_name": "__insert_gmt_ts",
+                        "target_data_type": "timestamp"
+                    },
+                    {
+                        "source_column_name": "__update_gmt_ts",
+                        "target_data_type": "timestamp"
+                    }
+                ],
+                "incremental_load": true,
+                "is_enabled": true,
+                "key_columns": [
+                    "mandt",
+                    "matnr",
+                    "charg"
+                ],
+                "load_type": "UPSERT",
+                "partition_columns": [
+                    "__partition_column"
+                ],
+                "reset_stream_checkpoint": false,
+                "source_database": "brz_maz_supply_sap_dop",
+                "source_system": "sap_dop",
+                "source_system_raw": "sap_dop",
+                "source_system_zone": "maz",
+                "source_table": "do_mch1",
+                "target_business_domain": "supply",
+                "target_business_subdomain": "production",
+                "target_database": "slv_maz_supply_sap_dop",
+                "target_table": "do_mch1",
+                "target_zone": "maz",
+                "source_system_country": "do",
+                "watermark_column": [
+                    "source_commit_ts",
+                    "header__change_seq"
+                ]
+            }
+        },
+        {
+            "load_to_bronze": {
+                "adb_brewdat_library_version": "v0.9.0",
+                "adb_notebook_path": "//brewdat-maz-maz-supply-rsi-repo-adb/data_integration/sap_dop/load_brz_generic_parquet",
+                "additional_parameters": " { \"enable_change_data_feed\": true, \"partition_column\": \"ersda\", \"partition_date_format\" : \"yyyy\" } ",
+                "incremental_load": true,
+                "is_enabled": true,
+                "reset_stream_checkpoint": false,
+                "source_raw_zone": "do",
+                "source_system": "sap_dop",
+                "source_system_raw": "sap_dop",
+                "source_system_zone": "maz",
+                "source_table": "do_MCHB",
+                "target_business_domain": "supply",
+                "target_business_subdomain": "production",
+                "target_database": "brz_maz_supply_sap_dop",
+                "target_table": "do_mchb",
+                "target_zone": "maz",
+                "source_system_country": "do"
+            },
+            "load_to_silver": {
+                "adb_brewdat_library_version": "v0.9.0",
+                "adb_notebook_path": "//brewdat-maz-maz-supply-rsi-repo-adb/data_integration/sap_dop/load_slv_generic_parquet",
+                "additional_parameters": {
+                    "enable_change_data_feed": "true"
+                },
+                "column_mapping": [
+                    {
+                        "source_column_name": "mandt",
+                        "target_data_type": "smallint"
+                    },
+                    {
+                        "source_column_name": "matnr",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "werks",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "lgort",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "charg",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "lvorm",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "ersda",
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    },
+                    {
+                        "source_column_name": "ernam",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "laeda",
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    },
+                    {
+                        "source_column_name": "aenam",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "lfgja",
+                        "target_data_type": "smallint"
+                    },
+                    {
+                        "source_column_name": "lfmon",
+                        "target_data_type": "tinyint"
+                    },
+                    {
+                        "source_column_name": "sperc",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "clabs",
+                        "target_data_type": "Decimal(13,3)"
+                    },
+                    {
+                        "source_column_name": "cumlm",
+                        "target_data_type": "Decimal(13,3)"
+                    },
+                    {
+                        "source_column_name": "cinsm",
+                        "target_data_type": "Decimal(13,3)"
+                    },
+                    {
+                        "source_column_name": "ceinm",
+                        "target_data_type": "Decimal(13,3)"
+                    },
+                    {
+                        "source_column_name": "cspem",
+                        "target_data_type": "Decimal(13,3)"
+                    },
+                    {
+                        "source_column_name": "cretm",
+                        "target_data_type": "Decimal(13,3)"
+                    },
+                    {
+                        "source_column_name": "cvmla",
+                        "target_data_type": "Decimal(13,3)"
+                    },
+                    {
+                        "source_column_name": "cvmum",
+                        "target_data_type": "Decimal(13,3)"
+                    },
+                    {
+                        "source_column_name": "cvmin",
+                        "target_data_type": "Decimal(13,3)"
+                    },
+                    {
+                        "source_column_name": "cvmei",
+                        "target_data_type": "Decimal(13,3)"
+                    },
+                    {
+                        "source_column_name": "cvmsp",
+                        "target_data_type": "Decimal(13,3)"
+                    },
+                    {
+                        "source_column_name": "cvmre",
+                        "target_data_type": "Decimal(13,3)"
+                    },
+                    {
+                        "source_column_name": "kzicl",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "kzicq",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "kzice",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "kzics",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "kzvcl",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "kzvcq",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "kzvce",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "kzvcs",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "herkl",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "chdll",
+                        "target_data_type": "date",
+                        "date_format": "yyyy-mm-dd"
+                    },
+                    {
+                        "source_column_name": "chjin",
+                        "target_data_type": "smallint"
+                    },
+                    {
+                        "source_column_name": "chrue",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "source_commit_ts",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "target_apply_ts",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "source_commit_dt",
+                        "date_format": "string"
+                    },
+                    {
+                        "source_column_name": "target_apply_dt",
+                        "date_format": "string"
+                    },
+                    {
+                        "source_column_name": "header__change_seq",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "op_ind",
+                        "target_data_type": "string"
+                    },
+                    {
+                        "source_column_name": "__partition_column",
+                        "target_data_type": "int"
+                    },
+                    {
+                        "source_column_name": "__insert_gmt_ts",
+                        "target_data_type": "timestamp"
+                    },
+                    {
+                        "source_column_name": "__update_gmt_ts",
+                        "target_data_type": "timestamp"
+                    }
+                ],
+                "incremental_load": true,
+                "is_enabled": true,
+                "key_columns": [
+                    "mandt",
+                    "matnr",
+                    "werks",
+                    "lgort",
+                    "charg"
+                ],
+                "load_type": "UPSERT",
+                "partition_columns": [
+                    "__partition_column"
+                ],
+                "reset_stream_checkpoint": false,
+                "source_database": "brz_maz_supply_sap_dop",
+                "source_system": "sap_dop",
+                "source_system_raw": "sap_dop",
+                "source_system_zone": "maz",
+                "source_table": "do_mchb",
+                "target_business_domain": "supply",
+                "target_business_subdomain": "production",
+                "target_database": "slv_maz_supply_sap_dop",
+                "target_table": "do_mchb",
+                "target_zone": "maz",
+                "source_system_country": "do",
+                "watermark_column": [
+                    "source_commit_ts",
+                    "header__change_seq"
+                ]
+            }
+        }
+    ]
+}
