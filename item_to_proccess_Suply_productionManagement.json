@@ -3,7 +3,7 @@
     "pipelines": [
         {
             "load_to_bronze": {
-                "adb_brewdat_library_version": "v0.9.0",
+                "adb_brewdat_library_version": "v1.1.2",
                 "adb_notebook_path": "//brewdat-maz-maz-supply-rsi-repo-adb/data_integration/sap_dop/load_brz_generic_parquet",
                 "additional_parameters": " { \"enable_change_data_feed\": true, \"partition_column\": \"andat\", \"partition_date_format\" : \"yyyy\" } ",
                 "incremental_load": true,
@@ -22,7 +22,7 @@
                 "source_system_country": "do"
             },
             "load_to_silver": {
-                "adb_brewdat_library_version": "v0.9.0",
+                "adb_brewdat_library_version": "v1.1.2",
                 "adb_notebook_path": "//brewdat-maz-maz-supply-rsi-repo-adb/data_integration/sap_dop/load_slv_generic_parquet",
                 "additional_parameters": {
                     "enable_change_data_feed": "true"
@@ -153,7 +153,7 @@
         },
         {
             "load_to_bronze": {
-                "adb_brewdat_library_version": "v0.9.0",
+                "adb_brewdat_library_version": "v1.1.2",
                 "adb_notebook_path": "//brewdat-maz-maz-supply-rsi-repo-adb/data_integration/sap_dop/load_brz_generic_parquet",
                 "additional_parameters": " { \"enable_change_data_feed\": true, \"partition_column\": \"andat\", \"partition_date_format\" : \"yyyy\" } ",
                 "incremental_load": true,
@@ -172,7 +172,7 @@
                 "source_system_country": "do"
             },
             "load_to_silver": {
-                "adb_brewdat_library_version": "v0.9.0",
+                "adb_brewdat_library_version": "v1.1.2",
                 "adb_notebook_path": "//brewdat-maz-maz-supply-rsi-repo-adb/data_integration/sap_dop/load_slv_generic_parquet",
                 "additional_parameters": {
                     "enable_change_data_feed": "true"
@@ -337,7 +337,7 @@
         },
         {
             "load_to_bronze": {
-                "adb_brewdat_library_version": "v0.9.0",
+                "adb_brewdat_library_version": "v1.1.2",
                 "adb_notebook_path": "//brewdat-maz-maz-supply-rsi-repo-adb/data_integration/sap_dop/load_brz_generic_parquet",
                 "additional_parameters": " { \"enable_change_data_feed\": true, \"partition_column\": \"andat\", \"partition_date_format\" : \"yyyy\" } ",
                 "incremental_load": true,
@@ -356,7 +356,7 @@
                 "source_system_country": "do"
             },
             "load_to_silver": {
-                "adb_brewdat_library_version": "v0.9.0",
+                "adb_brewdat_library_version": "v1.1.2",
                 "adb_notebook_path": "//brewdat-maz-maz-supply-rsi-repo-adb/data_integration/sap_dop/load_slv_generic_parquet",
                 "additional_parameters": {
                     "enable_change_data_feed": "true"
@@ -916,7 +916,7 @@
         },
         {
             "load_to_bronze": {
-                "adb_brewdat_library_version": "v0.9.0",
+                "adb_brewdat_library_version": "v1.1.2",
                 "adb_notebook_path": "//brewdat-maz-maz-supply-rsi-repo-adb/data_integration/sap_dop/load_brz_generic_parquet",
                 "additional_parameters": " { \"enable_change_data_feed\": true, \"partition_column\": \"andat\", \"partition_date_format\" : \"yyyy\" } ",
                 "incremental_load": true,
@@ -935,7 +935,7 @@
                 "source_system_country": "do"
             },
             "load_to_silver": {
-                "adb_brewdat_library_version": "v0.9.0",
+                "adb_brewdat_library_version": "v1.1.2",
                 "adb_notebook_path": "//brewdat-maz-maz-supply-rsi-repo-adb/data_integration/sap_dop/load_slv_generic_parquet",
                 "additional_parameters": {
                     "enable_change_data_feed": "true"
