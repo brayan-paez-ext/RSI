@@ -134,7 +134,7 @@
                     },
                     {
                         "source_column_name": "max_stack",
-                        "target_data_type": "tinyint"
+                        "target_data_type": "smallint"
                     },
                     {
                         "source_column_name": "capause",
